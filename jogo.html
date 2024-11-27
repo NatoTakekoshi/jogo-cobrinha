@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=play_circle" />
+
+        <link rel="stylesheet" href="./css/style.css">
+
+        <title>Jogo da Cobrinha</title>
+
+    </head>
+    <body>
+        <div class="score">score: <span class="score--value">00</span></div>
+
+        <div id="dificuldade">
+            <div class="radio">
+              <label>
+                <input type="radio" name="dificuldade" value="250">
+                <span class="opcao">Lento</span>
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="dificuldade" value="100">
+                <span class="opcao">Normal</span>
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="dificuldade" value="50">
+                <span class="opcao">Rapido</span>
+              </label>
+            </div>
+          </div>
+
+        <div class="menu-screen">
+            <span class="game-over">game over</span>
+            <span class="final-score">score <span>00</span> </span>
+
+            <button class="btn-play">
+                <span class="material-symbols-outlined">
+                    play_circle
+                </span>
+                Jogar novamente
+            </button>
+                <a href="/index.html">
+                    <button class="btn-play">
+                        Menu
+                    </button>
+                </a>
+        </div>
+
+        <canvas width="600" height="600"></canvas>
+        <script src="./js/script.js"></script>
+    </body>
+
+
+
+</html>
